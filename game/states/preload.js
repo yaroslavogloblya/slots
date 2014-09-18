@@ -12,8 +12,10 @@ Preload.prototype = {
 
     this.load.onLoadComplete.addOnce(this.onLoadComplete, this);
     this.load.setPreloadSprite(this.asset);
+    this.load.spritesheet('resetbutton', 'assets/resetButton.png', 197, 115);
     this.load.image('yeoman', 'assets/yeoman-logo.png');
-
+    this.load.spritesheet('icons', 'assets/icons.png', 98, 98, 18);
+    this.load.image('top', 'assets/bg.png');
   },
   create: function() {
     this.asset.cropEnabled = false;
